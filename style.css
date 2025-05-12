@@ -138,6 +138,66 @@ footer {
     font-size: 32px;
   }
 
+  .comment_section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 3px 6px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.comment_form {
+  max-width: 600px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.comment_form textarea {
+  width: 100%;
+  height: 140px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  resize: vertical;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.comment_form textarea:focus {
+  border-color: #222;
+  box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.comment_form button {
+  width: fit-content;
+  align-self: center;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  font-weight: 500;
+}
+
+.comment_form button:hover {
+  background-color: #444;
+}
+
+.comment_form button:active {
+  transform: scale(0.95);
+}
 
 footer a.github_link {
   color: #fff;
